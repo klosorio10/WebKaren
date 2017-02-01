@@ -1,4 +1,91 @@
-h1 {
-	font-family: arial;
-	color:rgb(125,217,193);
+h1,h2 {
+	font-family: "Bebas Neue",arial,serif;
+	color:white;
 }
+h3{
+	font-color:rgb(125,217,195);
+}
+div.ini{
+	background-color: black;
+    color: white;
+    margin: 0px 0 0px 0;
+    padding: 50px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    font-family: arial,serif;
+}
+
+
+/* Esta parte establece los proyectos de diseño*/
+.content_dise{
+    width: 55%;
+    float:left;
+
+}
+.project_dise{
+    background-color: white;
+    height: 186px;
+    width: 600px;
+    float:left;
+}
+.project_img_dise{
+    width:40%;
+    float: left;
+}
+
+.project_name_dise{
+    padding-left: 10px;
+    float: left;
+}
+
+.project_date_dise{
+    padding-right: 10px;
+    float: right;
+    font-size: 10px;
+}
+
+.project_text_dise{
+    padding-left: 10px;
+    float: left;
+}
+
+/* Esta parte establece los proyectos de Sistema*/
+
+.content_ISIS{
+    width: 55%;
+    float:right;
+}
+.project_ISIS{
+    background-color: white;
+    width: 600px;
+    height: 186px;
+    float:right;
+}
+.project_img_ISIS{
+    width:40%;
+    float: right;
+}
+
+.project_name_ISIS{
+    padding-right: 10px;
+    float: right;
+}
+
+.project_date_ISIS{
+    padding-left: 10px;
+    float: left;
+    font-size: 10px;
+}
+
+.project_text_ISIS{
+    padding-right: 10px;
+    float: right;
+}
+
+
