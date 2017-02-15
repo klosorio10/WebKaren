@@ -1,106 +1,247 @@
 <!DOCTYPE html>
-<html lang="es" href="qa-html-language-declarations.es">
+<html lang="es" href="qa-html-language-declarations.es" ng-app="principal">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta name="author" content="Karen Osorio">
-<meta name="keywords" content="HTML,CSS,,JavaScript">
-<link href="style.css" type="text/css" rel="stylesheet" />
-<title>Karen Osorio</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="author" content="Karen Osorio">
+	<meta name="keywords" content="HTML,CSS,,JavaScript,portafolio">
+	<!-- css -->
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+	<title>Karen Osorio</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script>
+		$(function() {
+			$('#slides').slidesjs({
+				width: 940,
+				height: 528,
+				play: {
+					active: true,
+					auto: true,
+					interval: 4000,
+					swap: true
+				}
+			});
+		});
+	</script>
+
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function(){
+			emailjs.init("254804483979-6s8omtl2u770d1rmppnjs4q7ilvcgkvv.apps.googleusercontent.com");
+			
+
+			emailjs.send("my_service","my_template",{
+				name: "James", 
+				notes: "Check this out!"
+			})
+			.then(
+				function(response) {
+					console.log("SUCCESS", response);
+				}, 
+				function(error) {
+					console.log("FAILED", error);
+				}
+				);
+		})();
+	</script>
 
 </head>
 <body>
 
-
-<div class="ini">
-<h1> Karen Lorena Osorio Henao</h1>
-
-<h4> Ingenieria de sistemas y computación <br>Diseño </h4>
-</div>
-	<div class="project_dise">
-	
-		<div class="project_img_dise">
-			<img src="/images/nia2.png" alt="Nia logo">
-		</div>
-
-		<div class="content_dise">
-			<div class="project_name_dise">
-				<h3>NIA - Branding</h3>
-			</div>
-			<div class="project_date_dise">
-				<h3>1/09/16</h3>
-			</div>
-
-			<div class="project_text_dise">
-				<p>"Nia es una empresa nacional con vision de busca tratar el pos-conflicto, realizando alianzas estrategicas con el govierno"</p>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="project_ISIS">
-	
-		<div class="project_img_ISIS">
-			<img src="/images/nia2.png" alt="Nia logo">
-		</div>
+	<!--start: Header -->
+	<header>
 		
-		<div class="content_ISIS">
-			<div class="project_name_ISIS">
-				<h3>NIA - Branding</h3>
+		<!--start: Container -->
+		<div class="container">
+			
+			<!--start: Row -->
+			<div class="row-fluid">
+				
+				<!--start: Navigation -->
+				<div class="navigation"> 
+					
+					<div class="navbar-fixed-top" style="background-color: lightseagreen;">
+						<div class="navbar-inner">
+							<div class="btn btn-navbar btnOverlay" data-toggle="collapse" data-target=".nav-collapse" >
+								<ul class="nav">
+									<li><a href="#more" class="more">...</a></li>
+									<li><a href="#contact" class="contact">Contactame</a></li>
+									<li><a href="#about" class="howamI">¿Quén soy?</a></li>
+									<li><a href="#projects" class="portafolio">Portafolio</a></li>
+									<li><a href="#principal" class="home">Home</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>	
+				<!--end: Navigation -->	
+				
 			</div>
-
-			<div class="project_date_ISIS">
-				<h3>1/09/16</h3>
-			</div>
-
-			<div class="project_text_ISIS">
-				<p>"Nia es una empresa nacional con vision de busca tratar el pos-conflicto, realizando alianzas estrategicas con el govierno"</p>
-			</div>
-
+			<!--end: Row -->
+			
 		</div>
-	</div>
-
-		<div class="project_dise">
-	
-		<div class="project_img_dise">
-			<img src="/images/nia2.png" alt="Nia logo">
-		</div>
-
-		<div class="content_dise">
-			<div class="project_name_dise">
-				<h3>NIA - Branding</h3>
-			</div>
-			<div class="project_date_dise">
-				<h3>1/09/16</h3>
-			</div>
-
-			<div class="project_text_dise">
-				<p>"Nia es una empresa nacional con vision de busca tratar el pos-conflicto, realizando alianzas estrategicas con el govierno"</p>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="project_ISIS">
-	
-		<div class="project_img_ISIS">
-			<img src="/images/nia2.png" alt="Nia logo">
-		</div>
+		<!--end: Container-->			
 		
-		<div class="content_ISIS">
-			<div class="project_name_ISIS">
-				<h3>NIA - Branding</h3>
-			</div>
+	</header>
 
-			<div class="project_date_ISIS">
-				<h3>1/09/16</h3>
-			</div>
+	<section id="principal">
+		<div class="ini">
+			<h1 class="container-fluid text-center nombre" > Karen Lorena Osorio Henao</h1>
 
-			<div class="project_text_ISIS">
-				<p>"Nia es una empresa nacional con vision de busca tratar el pos-conflicto, realizando alianzas estrategicas con el govierno"</p>
-			</div>
-
+			<h4 class=" text-center" style="color: gray;"> Ingenieria de sistemas y computación <br>Diseño </h4>
 		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id="slides">
+			<img src="images/IMG_8911.JPG">
+			<img src="images/IMG_1937.jpg">
+			<img src="images/IMG_1090.jpg">
+			<img src="images/IMG_1939.jpg">
+			<img src="images/IMG_1934.jpg">
+			<img src="images/IMG_1859.jpg">
+			<img src="images/IMG_8631.JPG">
+			<img src="images/IMG_8674.JPG">
+			<img src="images/IMG_8806.JPG">
+		</div>
+	</section> <!-- principal --> 
+	<div style="width: 100%;height: 10px;background-color: rgb(255,154,98);">
 	</div>
 
-</body>
-</html>
+	<section id="projects">
+		<div id="portfolio" class="container-fluid text-center">
+			<h2>Portfolio</h2><br>
+			<div class="row text-center ">
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="images/img1.jpg" alt="DDream" style="height: 300px; width: 300px;">
+						<p><strong>Ddream</strong></p>
+						<p>Sueños lucidos te ayudan a mejorar tu calidad de vida</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="images/img2.jpg" alt="Expresion tridimiensional" style=" height: 300px; width: 300px;">
+						<p><strong>Molde macho hembra</strong></p>
+						<p>fabricación tridimensional</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="images/nia2.png" alt="Nia" style="height: 280px;width: 350px;">
+						<p><strong>Nia</strong></p>
+						<p>Empresa enfocada en posconflicto colombiano, planteando un nuevo modelo de negocio</p>
+					</div>
+				</div>
+			</div><br>
+		</div>
+	</section> <!-- Section projects-->
+
+	<section id="description">
+		
+		<div class="descri">
+			En esta sección aparece la descripción completa del proyecto seleccionado
+			<!-- Container (Services Section) -->
+
+		</section> <!--Description -->
+
+		<section id="about">
+			<div class="contacto" >
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="media">
+						<div class="media-left media-middle">
+							<img src="images/perfil.jpg" class="img-thumbnail media-object" width="30%"  style="float: left;
+							position: relative;">
+
+							<div class="media-body">
+								<h2 class="media-heading" style="padding-left: 40px;">HOLA!</h2>
+								<p style="padding-left: 40px;">Soy una persona creativa que busca nuevos retos, me encanta conocer gente nueva y trabajar con difetentes personas que tengan conocimientos distintos a los mios. Busco aprender siempre cosas nuevas y disfrutar de ello.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<hr>
+			</div>
+			<div id="services" class="container-fluid text-center">
+				<div class="row ">
+					<div class="col-sm-3">
+						<span class="glyphicon glyphicon-flag logo-small"></span>
+						<h4>Retos</h4>
+						<p>Me gustan los retos</p>
+					</div>
+					<div class="col-sm-3">
+						<span class="glyphicon glyphicon-heart logo-small"></span>
+						<h4>Apasionada</h4>
+						<p>me gusta poner de mi en cada proyecto que realizo</p>
+					</div>
+					<div class="col-sm-3">
+						<span class="glyphicon glyphicon-plus-sign logo-small"></span>
+						<h4>Comprometida</h4>
+						<p>Me gusta terminar bien las cosas sin importar la dificultad</p>
+					</div>
+					<div class="col-sm-3">
+						<span class="glyphicon glyphicon-screenshot logo-small"></span>
+						<h4>Perseverante</h4>
+						<p>mi objetivo es muy claro y lucho por llegar a él</p>
+					</div>
+				</div>
+			</div>
+		</section> <!--About -->
+
+		<section id="contact">
+			
+			<!-- Container (Contact Section) -->
+			<div id="contact" class="container-fluid bg-grey">
+				<h2 class="text-center">CONTACTO</h2>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-sm-5">
+						<p><span class="glyphicon glyphicon-map-marker"></span> Bogotá, CO</p>
+						<p><span class="glyphicon glyphicon-phone"></span> +57 3183384420</p>
+						<p><span class="glyphicon glyphicon-envelope"></span> kl.osorio10@uniandes.edu.co</p>
+					</div>
+				</div>
+				<div class="row">	
+					<div class="col-md-2"></div>
+					<div class="col-sm-8 ">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+							</div>
+							<div class="col-sm-6 form-group">
+								<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+							</div>
+						</div>
+						<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+						<div class="row">
+							<div class="col-sm-12 form-group">
+								<button class="btn btn-default pull-right" type="submit">Send</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> <!--contact -->
+
+		<section id="more">
+
+		</section>
+
+		<!--Scripts -->
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+		<script src="js/app.js" type="text/javascript"> </script>
+	</body>
+	</html>
