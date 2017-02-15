@@ -28,6 +28,13 @@
 		});
 	</script>
 
+	<script>
+		function myFunction() {
+			var popup = document.getElementById("aviso");
+			popup.classList.toggle("show");
+		}
+	</script>
+
 	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 </head>
@@ -102,35 +109,61 @@
 		<div id="portfolio" class="container-fluid text-center">
 			<h2>Portfolio</h2><br>
 			<div class="row text-center ">
-				<div class="col-sm-4">
-					<div class="thumbnail">
-						<img src="images/img1.jpg" alt="DDream" style="height: 300px; width: 300px;">
-						<p><strong>Ddream</strong></p>
-						<p>Sueños lucidos te ayudan a mejorar tu calidad de vida</p>
+				<div class="slides">
+
+
+					<div class="col-sm-4">
+						<div class="thumbnail">
+							<img src="images/img1.jpg" alt="DDream" style="height: 300px; width: 300px;">
+							<p><strong>Ddream</strong></p>
+							<p>Sueños lucidos te ayudan a mejorar tu calidad de vida</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="thumbnail">
+							<img src="images/img2.jpg" alt="Expresion tridimiensional" style=" height: 300px; width: 300px;">
+							<p><strong>Molde macho hembra</strong></p>
+							<p>fabricación tridimensional</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="thumbnail">
+							<img src="images/nia2.png" alt="Nia" style="height: 280px;width: 350px;">
+							<p><strong>Nia</strong></p>
+							<p>Empresa enfocada en posconflicto colombiano, planteando un nuevo modelo de negocio</p>
+						</div>
+						<div class="row" >
+							<div class="col-sm-2"></div>
+							<div class="col-sm-8" style="width: 100%;height: 10px;background-color: rgb(255,154,98);position: static;"></div>
+							<div class="col-sm-2"></div>
+						</div>
 					</div>
 				</div>
-				<div class="col-sm-4">
-					<div class="thumbnail">
-						<img src="images/img2.jpg" alt="Expresion tridimiensional" style=" height: 300px; width: 300px;">
-						<p><strong>Molde macho hembra</strong></p>
-						<p>fabricación tridimensional</p>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="thumbnail">
-						<img src="images/nia2.png" alt="Nia" style="height: 280px;width: 350px;">
-						<p><strong>Nia</strong></p>
-						<p>Empresa enfocada en posconflicto colombiano, planteando un nuevo modelo de negocio</p>
-					</div>
-				</div>
-			</div><br>
+			</div>
+			<br>
 		</div>
 	</section> <!-- Section projects-->
 
 	<section id="description">
 
 		<div class="descri">
-			En esta sección aparece la descripción completa del proyecto seleccionado
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="media">
+					<div class="media-center media-middle">
+						<img src="images/modeloValor.jpg" class="media-object" width="45%"  style="float: left;
+						position: relative; padding-top: 53px; ">
+
+						<div class="media-body">
+							<h2 class="media-heading" style="padding-left: 40px;"></h2>
+							<p style="padding-left: 40px; padding-top: 42px ; color:white;">Nia es una empresa que busca sanar el pais, materializando el perdon de los desmovilizados y poder alcanzar el perdón de los colombianos. Por lo que el modelo de negocio nace como una floristeria, cuyos productos son cultivados por desmovilizados del conflicto armado Colombiano.</p>
+
+							<p style="padding-left: 40px; padding-top: 195px;font-style: oblique; color:white;">Producto con un impacto simbólico que integrará al país</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 			<!-- Container (Services Section) -->
 
 		</section> <!--Description -->
@@ -207,7 +240,9 @@
 						<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
 						<div class="row">
 							<div class="col-sm-12 form-group">
-								<button class="btn btn-default pull-right" type="submit">Send</button>
+								<div class="popup btn btn-default pull-right " onclick="myFunction()">Enviar
+									<span class="popuptext" id="aviso">Espera una pronta respuesta!</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -216,6 +251,33 @@
 		</section> <!--contact -->
 
 		<section id="more">
+			<div class="row more" style="height: 100px;">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div class="tweet">
+					<a href="https://twitter.com/@KarenOsorioWeb">
+						<img class="redes" src="http://goinkscape.com/wp-content/uploads/2015/07/twitter-logo-final.png" alt="Logo twitter" style="
+    width: 10%;
+    float: left;
+    padding-top: 30px;
+"> 
+						</a> 
+					</div> <!--tweet-->
+				</div>
+				<div class="col-md-4">
+					<div class="tweet">
+					<a type ="text" href ="https://github.com/klosorio10">
+						<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo github" style="
+    width: 10%;
+    border-radius: 100%;
+    float: left;
+    padding-top: 30px;
+">  
+						</a>
+					</div> <!--tweet-->
+				</div>
+				<div class="col-md-4"></div>
+			</div>
 
 		</section>
 
